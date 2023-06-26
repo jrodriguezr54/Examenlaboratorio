@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examenlaboratorio.views.Pagecontactos">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="foto" WidthRequest="1000" HeightRequest="200" />
+            <Button x:Name="btnfoto" Text="Foto" Clicked="btnfoto_Clicked"/>
+            
+            <Entry x:Name="nombres" Placeholder="Ingrese sus Nombres" />
+            
+            <Entry x:Name="apellidos" Placeholder="Ingrese sus Apellidos" />
+            
+            <Entry x:Name="edad" Placeholder="Ingrese su Edad" />
+            
+            <Picker x:Name="Pais"  Title="Seleccione un pais">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Honduras</x:String>
+                        <x:String>Mexico</x:String>
+                        <x:String>Panama</x:String>
+                        <x:String>Costa Rica</x:String>
+                        <x:String>Nicaragua</x:String>
+                        <x:String>El Salvador</x:String>
+                        <x:String>Guatemala</x:String>
+                        <x:String>Belice</x:String>
+                        <x:String>Canada</x:String>
+                        <x:String>Estados Unidos</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <Entry x:Name="nota" Placeholder="Nota" />
+            
+            <Entry x:Name="telefono" Placeholder="Ingrese su numero Telefonico" Keyboard="Telephone" />
+
+            <Button x:Name="btnguardar" Text="Agregar Contacto" Clicked="btnguardar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

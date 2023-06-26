@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examenlaboratorio.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="Nombres" Placeholder="Ingrese sus Nombres" Keyboard="Text" />
+        <Entry x:Name="Apellidos" Placeholder="Ingrese sus Apellidos" Keyboard="Text" />
+        <Entry x:Name="Edad" Placeholder="Ingrese su Edad" Keyboard="Numeric" />
+        <Entry x:Name="Pais" Placeholder="Ingrese su Pais" Keyboard="Text" />
+        <Entry x:Name="Nota" Placeholder="Nota" Keyboard="Text" />
+        <Entry x:Name="Telefono" Placeholder="Ingrese su Telefono" Keyboard="Text" />
+
+        <Button x:Name="btnsalvar" Text="Salvar contacto" Clicked="btnsalvar_Clicked" />
+    </StackLayout>
+
+</ContentPage>
